@@ -1,6 +1,6 @@
 
 chk_local_storage();
-localStorage.setItem('autoRefresh','1');
+localStorage.setItem('autoRefresh','0');
 function chk_local_storage(){
 
 
