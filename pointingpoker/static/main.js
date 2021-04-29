@@ -1,8 +1,8 @@
 
 chk_local_storage();
-
+localStorage.setItem('autoRefresh','1');
 function chk_local_storage(){
-console.log(typeof localStorage.getItem('hasData'));
+
 
 if(localStorage.getItem('hasData')===null)
 {
