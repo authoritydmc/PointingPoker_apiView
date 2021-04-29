@@ -15,8 +15,8 @@
 <body>  
 
     <div id="api_detail">
-        <h2>Enter API Session ID</h2>
-        <input type="text" id="api_id" value="" >
+        <h2>Enter API Session URL</h2>
+        <input type="text" id="api_id" value="" placeholder="Enter Api URL">
         <button type="button" onclick="save_api_id()" >Get Rekt</button>
     </div>
     <div id="api_view_detail">
@@ -31,24 +31,16 @@
         <br>
         <div id="player_data">
 
-            <!-- Sample 1 player data  -->
-            <div class="player">
-                <span class="name"> RAJ </span>
-                <span class='vote'> 5</span>
-            </div>
+    
+            {% for player in player_data %} 
+                <div class="player">
+                    <span class="name"> {{player.name}} </span>
+                    <span class='vote'> {{player.vote}} </span>
+                </div>
+                
+            
+            {% endfor %}
 
-            <div class="player">
-                <span class="name"> Aman </span>
-                <span class='vote'> 4</span>
-            </div>
-            <div class="player">
-                <span class="name"> Roy </span>
-                <span class='vote'> 4</span>
-            </div>
-            <div class="player">
-                <span class="name"> Jason </span>
-                <span class='vote'> 4</span>
-            </div>
         </div>
 
     </div>

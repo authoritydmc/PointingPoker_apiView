@@ -3,11 +3,27 @@
     background-color:aliceblue;
     font-family: 'Architects Daughter', cursive;
 }
+#api_id
+{
+    height:50px;;
+    width: 900px;
+    font-size: 2.5em;
+    border:2px solid black;
+    margin:20px 80px;
+    
+}
+#SaveApi
+{
+    width:200px;
+    background:slateblue;
+    height:25px;
+}
 
 #api_detail
 {
     border:1px dashed green;
-    align-content: center;
+    display:flex;
+    flex-direction: column;
     text-align:center;
     margin:40px;
     padding:40px;

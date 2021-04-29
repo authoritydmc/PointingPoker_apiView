@@ -54,14 +54,6 @@ function clear_api_id()
 
 // Sample Testing with Four Players. 
 
-var datas=[];
-datas.push({name:'Test1',vote:9});
-datas.push({name:'Test2',vote:1});
-datas.push({name:'Test3',vote:2});
-datas.push({name:'Test4',vote:6});
-
-insert_player_data(datas);
-
 
 
 
