@@ -29,7 +29,10 @@
     padding:40px;
 
 }
-
+#main_player_area
+{
+    margin-top:50px;
+}
 
 #player_data
 {
@@ -74,4 +77,19 @@ background-color:white;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+}
+.points
+{
+    font-size: 1.2em;
+    display:flex;
+    flex-direction: row;
+    padding:10px 20px;
+    justify-content:space-evenly;
+}
+
+.pointBOX
+{
+    display:flex;
+    flex-direction:column;
+    border:1px dotted blue;
 }

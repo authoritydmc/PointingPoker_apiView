@@ -13,7 +13,8 @@ def home():
         if url!=None:
                 player.url=url
                 players=player.getData()
-                return render_template('main2.html',player_data=players)
+              
+                return render_template('main2.html',player_data=players['pdata'],points=players['psummary'],cm=players['maxPoint'])
         return render_template('main.html')
 
 

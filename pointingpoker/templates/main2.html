@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PointingPoker API VIEW</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Original+Surfer&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>  
+
+    <div id="api_detail">
+        <h2>Enter API Session URL</h2>
+        <input type="text" id="api_id" value="" placeholder="Enter Api URL">
+        <button type="button" onclick="save_api_id()" id="SaveApi">Get Rekt</button>
+    </div>
+    <div id="api_view_detail">
+        <h2 id="api_vID">Api: </h2>
+        <button type="button" onclick="clear_api_id()">Clear This Session/Watch Other Session</button>
+    </div>
+    <button type="button" onclick="refresh()">Refresh Data</button>
+    <input type="checkbox" id="isAutoRefresh" name="autoRefresh" checked="checked" onclick="hc()">
+<label for="vehicle1"> AutoRefresh </label><br>
+    <div id="main_player_area">
+
+        <div id="player_summary">
+            <h2>Points Summary</h4>
+            <h3 style="font-size:3em;">Current Max: {{cm}}</h5>
+                <div class="points">
+            {% for point in points %}
+                <div class="pointBOX">
+                    <span >Vote : {{point.name}}  </span>
+                    <span> Count: {{point.count}}</span> 
+                
+                </div>
+               
+                {%endfor%}
+            </div>
+            
+          
+        </div>
+        <span > Find Player Details Here.</span>
+        <br>
+        <br>
+        <div id="player_data">
+
+    
+            {% for player in player_data %} 
+                <div class="player">
+                    <span class="name"> {{player.name}} </span>
+                    <span class='vote'> {{player.vote}} </span>
+                </div>
+                
+            
+            {% endfor %}
+
+        </div>
+
+    </div>
+ 
+    <script src="{{url_for('static', filename='main2.js')}}"></script>
+    
+</body>
+</html>
