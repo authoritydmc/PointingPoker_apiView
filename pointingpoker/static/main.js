@@ -15,7 +15,10 @@ console.log("Removing Save api Url Page");
 $('#api_detail').hide();
 $('#api_view_detail').show();
 show_api_view_detail();
-
+if(localStorage.getItem("redirect")===null || localStorage.getItem("redirect")!="1"){
+window.location.href = '/?url='+localStorage.getItem('api_url');
+// localStorage.setItem("redirect","1");
+}
 //fetchData();
 }else{
     console.log("Showing apidetail");
@@ -38,6 +41,7 @@ function save_api_id()
     localStorage.setItem("api_id",api_id);
     localStorage.setItem("api_url",api_url);
     localStorage.setItem('hasData','true');
+    localStorage.setItem("redirect","0");
     chk_local_storage();
 
 }
@@ -47,6 +51,7 @@ function clear_api_id()
     localStorage.setItem('hasData','false');
     localStorage.removeItem('api_id');
     localStorage.removeItem('api_url');
+    localStorage.removeItem('redirect');
     chk_local_storage();
 
 
