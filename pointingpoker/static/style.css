@@ -1,0 +1,61 @@
+*
+{
+    background-color:aliceblue;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#api_detail
+{
+    border:1px dashed green;
+    align-content: center;
+    text-align:center;
+    margin:40px;
+    padding:40px;
+
+}
+
+
+#player_data
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.player
+{
+    display:flex;
+    flex-direction:column;
+    justify-items: space-around;
+    border:1px solid red;
+    width:200px;
+    height:auto;
+    background-color:white ;
+    text-align:center;
+    align-items: center;
+    padding:20px 10px;
+
+}
+
+
+
+.name
+{
+    font-family: 'Original Surfer', cursive;
+    font-size:2em;
+    background-color: white;
+}
+
+.vote
+{
+ font-size:6em;
+font-family: 'Pacifico', cursive;
+background-color:white;
+}
+
+#api_view_detail
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}

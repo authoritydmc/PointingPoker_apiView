@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-----Main -Pointing Poker---</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Original+Surfer&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>  
+
+    <div id="api_detail">
+        <h2>Enter API Session ID</h2>
+        <input type="text" id="api_id" value="" >
+        <button type="button" onclick="save_api_id()" >Get Rekt</button>
+    </div>
+    <div id="api_view_detail">
+        <h2 id="api_vID">Api: </h2>
+        <button type="button" onclick="clear_api_id()">Clear This Session/Watch Other Session</button>
+    </div>
+
+    <div id="main_player_area">
+
+        <span > Find Player Details Here.</span>
+        <br>
+        <br>
+        <div id="player_data">
+
+            <!-- Sample 1 player data  -->
+            <div class="player">
+                <span class="name"> RAJ </span>
+                <span class='vote'> 5</span>
+            </div>
+
+            <div class="player">
+                <span class="name"> Aman </span>
+                <span class='vote'> 4</span>
+            </div>
+            <div class="player">
+                <span class="name"> Roy </span>
+                <span class='vote'> 4</span>
+            </div>
+            <div class="player">
+                <span class="name"> Jason </span>
+                <span class='vote'> 4</span>
+            </div>
+        </div>
+
+    </div>
+ 
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+    
+</body>
+</html>
